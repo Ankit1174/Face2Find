@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #161b22;
+  color: #c9d1d9;
+}
+
+.container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-buttons button {
+  margin-left: 10px;
+}
+
+button {
+  background-color: #238636;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2ea043;
+}
+
+.mainSection {
+  display: flex;
+}
+
+.profileView, .dashboardView {
+  background-color: #2a2f36;
+  border: 1px solid #444c56;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.profileView {
+  height: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.profilePic {
+  width: 100px;
+  height: 100px;
+  background-color: #0d1117;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
+}
+
+.profilePic img {
+  width: 100%;
+  height: auto;
+}
+
+.dashboardView {
+  width: 70%;
+  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: flex-start;
+}
+
+
+.dashboardView form {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboardView form input,
+.dashboardView form select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #444c56;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+.dashboardView form input[type=\"file\"] {
+  background-color: transparent;
+}
+
+.dashboardView form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dashboardView form button:hover {
+  background-color: #45a049;
+}
+
+
+/* ===================== */
+
+.memberCard {
+  background-color: #2a2f36;
+  border: 1px solid #444c56;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 15px 10px 0 0;
+  width: 250px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.member-photo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid #4caf50;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.member-info {
+  text-align: center;
+}
+
+.member-info h4 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.member-info p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.member-info button {
+  margin-top: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  background-color: #da3633;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.member-info button:hover {
+  background-color: #f85149;
+}

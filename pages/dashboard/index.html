@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Face2Find - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Face2Find - Dashboard</h1>
+      <div class="header-buttons">
+        <button class="find-person-btn">Find Person</button>
+        <button class="add-member-btn">+ Add Member</button>
+      </div>
+    </div>
+
+    <div class="mainSection">
+      <!-- Profile Section -->
+      <div class="profileView">
+        <div class="profilePic">
+          <img src="dp.png" alt="DP" />
+        </div>
+        <div class="info">
+          <h3>Ankit Talpada</h3>
+          <p>Role: Parent</p>
+          <p>ankit@email.com</p>
+          <p>+91-9876543210</p>
+        </div>
+      </div>
+
+      <!-- Form Section -->
+      <div class="dashboardView" id="formContainer">
+        <h3 id="formTitle"></h3>
+        <form onsubmit="handleFormSubmit(event)">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="number" name="age" placeholder="Age" required />
+          <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+          <input type="text" name="city" placeholder="City & State" required />
+          <input type="text" name="lastSeen" placeholder="Last Seen Location (optional)" />
+          <input type="text" name="height" placeholder="Height (optional)" />
+          <input type="text" name="marks" placeholder="Skin Tone / Identifying Marks (optional)" />
+          <label>Upload Clear Face Photo:</label>
+          <input type="file" name="photo" accept="image/*" required />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
